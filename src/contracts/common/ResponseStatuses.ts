@@ -1,0 +1,8 @@
+export enum ResponseStatuses {
+    CREATED="CREATED",
+    UPDATED="UPDATED",
+    SUCCESS="SUCCESS",
+    DELETED="DELETED",
+    FAILED="FAILED",
+    VALIDATION_ERROR="VALIDATEION_ERROR"
+}
