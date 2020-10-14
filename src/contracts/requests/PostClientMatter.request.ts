@@ -26,12 +26,12 @@ export const PostClientMatterRequestSchema = yup.object<PostClientMatterRequest>
     case: yup.object<PostClientMatterRequestCase>({
         name: yup.string().required()
     }),
-    contract: yup.object<PostClientMatterRequestContract>({
-        name: yup.string().required()
-    }),
-    consultation: yup.object<PostClientMatterRequestConsultation>({
-        name: yup.string().required()
-    })
+    // contract: yup.object<PostClientMatterRequestContract>({
+    //     name: yup.string().required()
+    // }),
+    // consultation: yup.object<PostClientMatterRequestConsultation>({
+    //     name: yup.string().required()
+    // })
 }).test('at-least-one-object',`You haven't provided any of the matter types objects`, value => {
     let list = [value?.case, value?.contract, value?.consultation];
     return value != null || list.some(v => v != null);

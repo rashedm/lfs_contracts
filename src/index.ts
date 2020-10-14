@@ -6,6 +6,8 @@ export {GetClientsRequest, GetClientsRequestSchema} from './contracts/requests/G
 export {PostClientMatterRequest, PostClientMatterRequestCase, PostClientMatterRequestConsultation, PostClientMatterRequestContract, PostClientMatterRequestSchema} from './contracts/requests/PostClientMatter.request';
 export {PutClientMatterRequest, PutClientMatterRequestCase, PutClientMatterRequestConsultation, PutClientMatterRequestContract, PutClientMatterRequestSchema} from './contracts/requests/PutClientMatter.request';
 
+export {PostClientRequest, PostClientRequestIndividual, PostClientRequestOrganization, PostClientRequestOrganizationDelegate, PostClientRequestOrganizationTypes, PostClientRequestSchema} from './contracts/requests/PostClient.request';
+
 export {ResponseStatuses} from "./contracts/common/ResponseStatuses";
 export {ResponseComposite} from "./contracts/common/Response.composite";
 
