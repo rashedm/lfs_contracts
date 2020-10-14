@@ -1,14 +1,18 @@
 export interface IPagedRequest {
-    page:number;
+    page?:number;
     itemsPerPage?:number;
     sortBy?:string;
     desc?:boolean;
-    keyword?:string;
+    // keyword?:string;
     filters?:IFilterable[];
 }
 
-export interface IPagedResponse<T> extends IPagedRequest {
+export interface IPagedResponse<T> {
     data:T[];
+    meta:IMetaResponse;
+}
+
+export interface IMetaResponse extends IPagedRequest {
     count:number;
     pages:number[];
 }
