@@ -1,5 +1,9 @@
 export {LoginRequest, LoginRequestSchema} from "./contracts/requests/Login.request";
-export {RegisterRequest,FirmRegisterRequest} from "./contracts/requests/Register.request";
+export {PostRegisterRequest,PostRegisterRequestFirm, PostRegisterRequestSchema} from "./contracts/requests/Register.request";
+
+export {PostForgetPasswordRequest, PostForgetPasswordRequestSchema} from './contracts/requests/PostForgetPassword.request';
+
+export {PostResetPasswordRequest, PostResetPasswordRequestSchema} from './contracts/requests/PostResetPassword.request';
 
 export {LoginResponse,FirmUserLoginResponse,RefreshTokenLoginResponse,UserLoginResponse} from "./contracts/responses/Login.response";
 export {GetClientsRequest, GetClientsRequestSchema} from './contracts/requests/GetClients.request';
@@ -7,6 +11,12 @@ export {PostClientMatterRequest, PostClientMatterRequestCase, PostClientMatterRe
 export {PutClientMatterRequest, PutClientMatterRequestCase, PutClientMatterRequestConsultation, PutClientMatterRequestContract, PutClientMatterRequestSchema} from './contracts/requests/PutClientMatter.request';
 
 export {PostClientRequest, PostClientRequestIndividual, PostClientRequestOrganization, PostClientRequestOrganizationDelegate, PostClientRequestOrganizationTypes, PostClientRequestSchema} from './contracts/requests/PostClient.request';
+
+export {PostUserRequest, PostUserRequestRole, PostUserRequestSchema} from './contracts/requests/PostUser.request'
+export {PutUserRequest, PutUserRequestRole, PutUserRequestSchema} from './contracts/requests/PutUser.request'
+
+export {PostUserRoleRequest, PostUserRoleRequestSchema} from './contracts/requests/PostUserRole.request'
+export {PutUserRoleRequest, PutUserRoleRequestSchema} from './contracts/requests/PutUserRole.request'
 
 export {ResponseStatuses} from "./contracts/common/ResponseStatuses";
 export {ResponseComposite} from "./contracts/common/Response.composite";
