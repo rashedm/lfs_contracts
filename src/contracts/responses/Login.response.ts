@@ -1,6 +1,6 @@
-import {ResponseComposite} from '../common/Response.composite'
+import {Response} from '../common/Response';
 
-export class LoginResponse extends ResponseComposite {
+export class LoginResponse extends Response {
     token?: string;
     refreshToken?: RefreshTokenLoginResponse;
     user?: UserLoginResponse;

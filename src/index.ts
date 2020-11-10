@@ -19,6 +19,14 @@ export {PutUserRequest, PutUserRequestRole, PutUserRequestSchema} from './contra
 export {PostUserRoleRequest, PostUserRoleRequestSchema} from './contracts/requests/PostUserRole.request'
 export {PutUserRoleRequest, PutUserRoleRequestSchema} from './contracts/requests/PutUserRole.request'
 
+export {GetClientMatterResponse} from './contracts/responses/GetClientMatter.response';
+export {PutClientMatterResponse} from './contracts/responses/PutClientMatter.response';
+export {PostClientMatterResponse} from './contracts/responses/PostClientMatter.response';
+export {GetClientResponse} from './contracts/responses/GetClient.response';
+export {PostClientResponse} from './contracts/responses/PostClient.response';
+export {PutClientResponse} from './contracts/responses/PutClient.response';
+export {GetClientMattersResponse} from './contracts/responses/GetClientMatters.response';
+
 export {ResponseStatuses} from "./contracts/common/ResponseStatuses";
-export {ResponseComposite} from "./contracts/common/Response.composite";
+export {Response} from "./contracts/common/Response";
 
