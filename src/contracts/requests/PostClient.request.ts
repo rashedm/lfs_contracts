@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 
 export class PostClientRequest {
-    clientType: PostClientRequestTypes;
+    clientType?: PostClientRequestTypes;
     individual?: PostClientRequestIndividual;
     organization?: PostClientRequestOrganization;
 }

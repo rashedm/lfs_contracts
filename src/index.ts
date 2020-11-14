@@ -23,6 +23,7 @@ export {GetClientMatterResponse} from './contracts/responses/GetClientMatter.res
 export {PutClientMatterResponse} from './contracts/responses/PutClientMatter.response';
 export {PostClientMatterResponse} from './contracts/responses/PostClientMatter.response';
 export {GetClientResponse} from './contracts/responses/GetClient.response';
+export {GetClientsResponse} from './contracts/responses/GetClients.response';
 export {PostClientResponse} from './contracts/responses/PostClient.response';
 export {PutClientResponse} from './contracts/responses/PutClient.response';
 export {GetClientMattersResponse} from './contracts/responses/GetClientMatters.response';
