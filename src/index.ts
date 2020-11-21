@@ -10,7 +10,7 @@ export {GetClientsRequest, GetClientsRequestSchema} from './contracts/requests/G
 export {PostClientMatterRequest, PostClientMatterRequestCase, PostClientMatterRequestConsultation, PostClientMatterRequestContract, PostClientMatterRequestSchema} from './contracts/requests/PostClientMatter.request';
 export {PutClientMatterRequest, PutClientMatterRequestCase, PutClientMatterRequestConsultation, PutClientMatterRequestContract, PutClientMatterRequestSchema} from './contracts/requests/PutClientMatter.request';
 
-export {PostClientRequest, PostClientRequestIndividual, PostClientRequestOrganization, PostClientRequestOrganizationDelegate, PostClientRequestOrganizationTypes, PostClientRequestTypes, PostClientRequestSchema} from './contracts/requests/PostClient.request';
+export {PostClientRequest, PostClientRequestIndividual, PostClientRequestOrganization, PostClientRequestOrganizationDelegate, PostClientRequestOrganizationTypes, PostClientRequestTypes, PostClientRequestSchema, PostClientRequestOrganizationDelegateSchema} from './contracts/requests/PostClient.request';
 export {PutClientRequest, PutClientRequestIndividual, PutClientRequestOrganization, PutClientRequestOrganizationDelegate, PutClientRequestOrganizationTypes, PutClientRequestSchema} from './contracts/requests/PutClient.request';
 
 export {PostUserRequest, PostUserRequestRole, PostUserRequestSchema} from './contracts/requests/PostUser.request'

@@ -31,6 +31,7 @@ export class PostClientRequestOrganization {
 }
 
 export class PostClientRequestOrganizationDelegate {
+  id?: string;
   name?: string;
   nationalIqamaId?: string;
   email?: string;
@@ -49,6 +50,21 @@ export enum PostClientRequestOrganizationTypes {
   GovernmentAgency = "GovernmentAgency",
   NonProfitableOrganization = "NonProfitableOrganization",
 }
+
+export const PostClientRequestOrganizationDelegateSchema = yup
+  .object<PostClientRequestOrganizationDelegate>({
+    id: yup.string(),
+    name: yup.string().required(),
+    nationalIqamaId: yup.string().length(10).required(),
+    email: yup.string().email().required(),
+    mobile: yup.string().length(10).required(),
+    billingAddress: yup.string(),
+    nationalAddress: yup.string(),
+    phone: yup.string().length(10),
+    fax: yup.string().length(10),
+    preferedLanguage: yup.string().length(2),
+  })
+  .required();
 
 // TODO add max to string validation
 export const PostClientRequestSchema = yup
@@ -92,21 +108,7 @@ export const PostClientRequestSchema = yup
           commercialRecord: yup.string().required(),
           delegates: yup
             .array<PostClientRequestOrganizationDelegate>()
-            .of(
-              yup
-                .object<PostClientRequestOrganizationDelegate>({
-                  name: yup.string().required(),
-                  nationalIqamaId: yup.string().length(10).required(),
-                  email: yup.string().email().required(),
-                  mobile: yup.string().length(10).required(),
-                  billingAddress: yup.string(),
-                  nationalAddress: yup.string(),
-                  phone: yup.string().length(10),
-                  fax: yup.string().length(10),
-                  preferedLanguage: yup.string().length(2),
-                })
-                .required()
-            )
+            .of(PostClientRequestOrganizationDelegateSchema)
             .required(),
         }),
       }),
