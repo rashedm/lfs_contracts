@@ -1,6 +1,6 @@
 {
   "name": "lfs_contracts",
-  "version": "1.0.15-canary.1",
+  "version": "1.0.15",
   "description": "",
   "main": "dist/index.js",
   "repository": {
